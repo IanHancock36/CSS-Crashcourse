@@ -2,18 +2,54 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
+    margin: 0 ; 
 }
 .container{
     width : 80%;/* this will make the width 80 % of the available width works with shrkinking and making screen bigger*/
-    margin: auto;
-    overflow: hidden;
+    margin: auto; /* The CSS margin properties are used to create space around elements, outside of any defined borders*/
+    overflow: hidden; /* The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area. */
+}
+
+#mainHeader{
+    background: #333;
+    color: white; 
+}
+#mainNav{
+    background: #ccc;
+    color: black;
+}
+#mainNav ul {
+    padding: 0;
+    margin : 0 ;
+    list-style: none;
+}
+#mainNav li{
+    display: inline;
+    padding: 20px 10px;
+}
+#mainNav li:hover {  /* this is to make the nav list item Home Shop etc turn green when you hover over it. */
+    background: lime;
 
 }
 
-h1{
-   color: green;
+#mainNav a {
+    color: black;
+    text-decoration: none; /* this will remove the underline of the navbar components */
+    font-size: 18px;
+
 }
 
+#jumbo{
+ background-image: url("laserbackground.jpg");
+ background-position: center center; /* this centers on X and Y axis*/
+min-height: 300px;
+text-align: center;
+}
+
+#jumbo h1{
+    color: lime;
+    font-size: 40px;
+}
 p{
     border: 3px solid gray; 
     padding: 10px 20px 10px 20px;
@@ -31,4 +67,6 @@ example font size= 16pm then 1 em would=16px
 Padding is always top - clockwise top then right then bottom then left. 
 Margin is from top down. moves boarder paragraph down
 * Padding is inside the boarder and margin is outside the boarder.
+the "#" is used for selecting the id name in CSS. 
+ display: inline = Displays an element as an inline element (like <span>). Any height and width properties will have no effect
 */
